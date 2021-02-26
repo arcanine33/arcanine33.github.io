@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://arcanine33.github.io/sitemap.xml
