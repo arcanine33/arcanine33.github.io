@@ -1,5 +1,5 @@
 ---
-title: "[Book]Clean Architecture 6부(25~29장)"
+title: "[Book]Clean Architecture 6부(30~32장)"
 categories: book
 toc: true
 toc_label: "목차"
