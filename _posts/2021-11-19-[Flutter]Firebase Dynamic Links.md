@@ -70,7 +70,7 @@ deep link : 앱을 실행시켰을 때, 이 앱의 화면이 어디로 연결되
 
 이제 골 때리는 앱 설정으로 넘어가보자 
 
-[firebase_dynamic_links | Flutter Package](https://pub.dev/packages/firebase_dynamic_links)
+[firebase_dynamic_links Flutter Package](https://pub.dev/packages/firebase_dynamic_links)
 
 사실 내가 설명하는 것보다 여기서 설명하는 것으로 따라하는게 더 좋다.
 
