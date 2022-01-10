@@ -42,7 +42,7 @@ toc_icon: "cog"
 
 그리고 파베에 인증키 업로드 할 때, 인증키 형식은 **p8**이다! p12랑 헷갈리지 말자!
 
-1. Flutter 세팅
+2. Flutter 세팅
 
 ```dart
 firebase_messaging: ^11.2.0
@@ -110,13 +110,13 @@ class FirebaseMessagingController extends GetxController{
 
 테스트하면서 local noti 처리 하는 것도 만들었는데, 꽤 귀찮다... 
 
-1. local_notification 라이브러리를 추가해주고...
+3. local_notification 라이브러리를 추가해주고...
 
 ```dart
 flutter_local_notifications: ^9.1.4
 ```
 
-1. android는 퍼미션 추가를 해준다.
+4. android는 퍼미션 추가를 해준다.
 
 ```dart
 **<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -136,7 +136,7 @@ flutter_local_notifications: ^9.1.4
             android:turnScreenOn="true"**
 ```
 
-1. ios는 notification service를 만들어준다
+5. ios는 notification service를 만들어준다
 
 그리고 다음과 같은 코드 작성 (swift 기준)
 
@@ -171,7 +171,7 @@ class NotificationService: UNNotificationServiceExtension {
 }
 ```
 
-1. appdelegate에 다음과 같은 코드 추가
+6. appdelegate에 다음과 같은 코드 추가
 
 ios 10 이상부터는 다음 코드를 넣어줘야 동작!
 
@@ -182,7 +182,7 @@ Bool {
           }
 ```
 
-1. info.plist에도 추가
+7. info.plist에도 추가
 
 ```dart
 <key>FirebaseAppDelegateProxyEnabled</key>
@@ -206,7 +206,7 @@ _firebaseMessaging.unsubscribeFromTopic('something'); // 비구독
 
 그럼 이 코드들로 유저를 나눴다면, 어떻게 알림을 구독자에게만 보낼 수 있을까?
 
-![firebase subscription](/assets/images/2021-12-27-[Flutter]FCM/FCM.png)
+![firebase subscription](/assets/images/2021-12-27-[Flutter]FCM/[Flutter]FCM.png)
 
 파이어베이스 → 클라우드메세징 탭에서 다음과 같이 타겟에 something을 적어 something 구독자들에게만 알림을 날릴 수 있다! 이렇게 하면, 의도대로 사용자도 나누고 알림 날리기도 쉽고! 1석2조!
 
