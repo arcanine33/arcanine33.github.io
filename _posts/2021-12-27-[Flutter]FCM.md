@@ -1,14 +1,10 @@
-# 2021-12-27-[Flutter]FCM
-
-생성일: 2021년 12월 27일 오전 9:32
-
 ---
 title: "[Flutter]Firebasae Cloud Messaging"
 categories: flutter
 toc: true
 toc_label: "목차"
 toc_icon: "cog"
--—
+---
 
 서비스 앱을 만들 때, 거의 모든 웬만한 앱에는 다 들어가 있는 기능이 뭘까? 알람일 것이다. 이미 너무 많은 앱들은 알람 기능을 탑재하고 있고, 수 많은 앱들의 동시다발적인 알람은 사용자에게 많은 피로감을 준다. (나도 이 때문에, 앱깔면 제일 먼저 하는게 마케팅 수신동의 취소 누르기다)
 
