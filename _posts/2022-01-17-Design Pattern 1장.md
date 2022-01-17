@@ -1,7 +1,3 @@
-# 2022-01-17-Design Pattern 1장
-
-생성일: 2022년 1월 17일 오후 11:00
-
 ---
 title: "[Book]Design Pattern 1장"
 categories: book
